@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "live-taho.name" . }}
+  labels:
+    {{- include "live-taho.labels" . | nindent 4 }}
+  namespace: live
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - name: {{ .Values.service.port | quote }}
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+      nodePort: {{ .Values.service.nodePort }}
+      protocol: TCP
+  selector:
+    {{- include "live-taho.selectorLabels" . | nindent 4 }}

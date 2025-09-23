@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: apps-env
+  name: env-malacanang
+  namespace: dev
+data:
+  FLASK_APP: flask_app.py
+  FLASK_ENV: development
+  FLASK_RUN_PORT: "5000"
+  UNLEASH_ADDRESS: http://13.213.136.86:4242
+  UNLEASH_APP_NAME: kumu-dataplatform-dev
+  ENV: dev
+  SENTRY_DSN: http://169f48eb8ae64d05b8d49dd9fe4c1933@sentry-relay-svc.sentry-relay:3000/6231279
+  KUBJUSTSLEEP: "no"
+  PS1: $(whoami)@$(hostname):$(pwd)$
+  DD_PROFILING_ENABLED: "true"
+  DD_ENV: development
+  DD_SERVICE: dev-kdp-malacanang
+  DD_VERSION: 1.0.0

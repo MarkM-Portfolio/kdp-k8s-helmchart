@@ -1,0 +1,16 @@
+**/Chart.yaml linguist-language=Kubernetes linguist-vendored=false
+**/configMap.yaml linguist-language=Kubernetes linguist-vendored=false
+**/deployment.yaml linguist-language=Kubernetes linguist-vendored=false
+**/hpa.yaml linguist-language=Kubernetes linguist-vendored=false
+**/manifest.yaml linguist-language=Kubernetes linguist-vendored=false
+**/service.yaml linguist-language=Kubernetes linguist-vendored=false
+**/values.yaml linguist-language=Kubernetes linguist-vendored=false
+*.gitattributes linguist-language=Git linguist-vendored=false
+*.gitignore linguist-language=Git linguist-vendored=false
+*.helmignore linguist-language=Helmignore linguist-vendored=false
+*.md linguist-language=Markdown linguist-vendored=false
+*.tmpl linguist-language=Tmpl linguist-vendored=false
+*.tpl linguist-language=Template File linguist-vendored=false
+*.txt linguist-language=Text File linguist-vendored=false
+*.txte linguist-language=Txte linguist-vendored=false
+*.yamle linguist-language=Yamle linguist-vendored=false
